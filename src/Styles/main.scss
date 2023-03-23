@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+
+.myclass{
+    &-appear{
+        opacity: 0;
+    }
+    &-appear-active{
+        opacity: 1;
+        transition: opacity 5000ms;
+    }
+    &-enter{
+        opacity: 0;
+    }
+    &-enter-active{
+        opacity: 1;
+        transition: opacity 5000ms;
+    }
+    &-enter-done{
+        opacity: 1;
+    }
+    &-exit{
+        opacity: 1;
+    }
+    &-exit-active{
+        opacity: 0;
+        transition: opacity 5000ms;
+    }
+    &-exit-done{
+        opacity: 0;
+    }
+}
+
+.my-paragraph{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.adm-modal{
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+    .adm-modal{
+        width: 60%;
+    }
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: linear-gradient(to right,#FFC0C0,#FFFAE0,#F0FFF6);
+    margin-bottom: 0.5rem;
+
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+
+.logo-image{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.name-alignment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.patient-name{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00252F;
+    font-weight: 500;
+
+}
+
+.para-details{
+    color: rgba(0, 37, 47, 0.56);
+    font-size: 1rem;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.resident{
+    color: rgba(0, 37, 47, 0.56);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.country{
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: #666666;
+    font-size: 1.5rem;
+}
+.details-section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.box-section{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: none;
+    width: 32%;
+}
+.box-section-first{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+
+}
+.new-color{
+    color: #ED8383;
+    width: 15px;
+    height: 15px;
+}
+.box-para-bottom{
+    background-color: #FFF6EF;
+    padding: 0.2rem;
+    color: #666666;
+    font-size: 1rem;
+
+}
+.box-para{
+    color: #AAAAAA;
+    font-size: 1rem;
+
+}
+
+.box-section-2{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: none;
+    width: 48%;
+}
+
+.admission-journey{
+    background-color: #E5E5E5;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.admission-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+.heading-admission{
+    font-size: 2rem;
+    font-weight: 100;
+    color: #00252F;
+}
+.elepsed-container{
+    display: flex;
+    align-items: center;
+
+}
+.para-elepsed{
+    color: #888888;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+
+}
+.btn{
+    color: #FF0042;
+    background-color: #ffffff;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.8rem;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+}
+
+.alignment-name{
+    display: flex;
+    align-items: center;
+}
